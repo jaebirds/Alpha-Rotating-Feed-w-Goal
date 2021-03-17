@@ -54,7 +54,7 @@
   "goalType": {
     "type": "dropdown",
     "label": "Goal type",
-    "value": "subscribers",
+    "value": "subscriber",
     "options": {
       "none": "none",
       "subscriber": "Subscribers",

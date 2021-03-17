@@ -49,7 +49,7 @@ const parseData = (data) => {
     let text = "";
 	if (element.type == "goal") {
       
-      	let goalProgess = 0;
+      	let goalProgress = 0;
       
         switch (element.goalType) {
           case 'subscriber-points':
@@ -60,7 +60,6 @@ const parseData = (data) => {
             goalProgress = data[element.goalType + "-" + element.goalTimeframe]["count"];
             break;
           default:
-            goalProgress = data[element.goalType + "-" + element.goalTimeframe]["amount"];
             break;
         }
 	
