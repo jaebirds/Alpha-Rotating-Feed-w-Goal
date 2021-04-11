@@ -3,7 +3,7 @@
  * - HarrisHeller (@HarrisHeller)
  * - SamWoodhall (@SamCWoodhall)
  * - thefyrewire (@MikeyHay)
- * - Jaebirds (@jaebirdsarts)
+ * - Jaebirds (@JaebirdsArts)
 */
 
 const elements = [], numElements = 5;
