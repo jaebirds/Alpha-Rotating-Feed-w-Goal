@@ -1,5 +1,5 @@
 /*
- * Alpha Rotating Metric v1.3a
+ * Alpha Rotating Metric v1.4a
  * - HarrisHeller (@HarrisHeller)
  * - SamWoodhall (@SamCWoodhall)
  * - thefyrewire (@MikeyHay)
@@ -191,15 +191,17 @@ window.addEventListener('onWidgetLoad', async function (obj) {
           }
           break;
       }
+
+      var slideToAppend = "<div class='mySlides'><div><span class='username' id='" + element.type + "'></span>";
+      if (element.icon === 'on') {
+        if (icon === 'G')
+          slideToAppend += '<span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138 138"><circle class="a" cx="69" cy="69" r="50"/><path class="b" d="M297.64,363.94a57,57,0,1,1-57,57,57,57,0,0,1,57-57m0-12a69,69,0,1,0,69,69,69.08,69.08,0,0,0-69-69Z" transform="translate(-228.64 -351.94)"/></svg></span>';
+        else
+          slideToAppend += '<span class="icons icons-' + icon + '">' + icon + '</span>';
+      }
+      slideToAppend += "</div></div>";
       
-      $(".container").append(`
-        <div class="mySlides">
-          <div>
-            <span class="username" id="${element.type}"></span>
-            ${element.icon === 'on' ? `<span class="icons icons-${icon}">${icon}</span>` : ''}
-          </div>
-        </div>`
-      );
+      $(".container").append(slideToAppend);
       duplicateCheck.push(element.type);
     }
   });

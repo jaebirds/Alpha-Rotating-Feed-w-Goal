@@ -1,29 +1,30 @@
 {
-  "textOptions": {
-    "type": "hidden",
-    "label": "TEXT OPTIONS"
-  },
   "fontFamily": {
+    "group": "TEXT OPTIONS",
     "type": "googleFont",
     "label": "Font family",
     "value": "Passion One"
   },
   "fontColor": {
+    "group": "TEXT OPTIONS",
     "type": "colorpicker",
     "label": "Font color",
     "value": "#FFFFFF"
   },
   "accentColor": {
+    "group": "TEXT OPTIONS",
     "type": "colorpicker",
     "label": "Accent color",
     "value": "#97CCFF"
   },
   "fontSize": {
+    "group": "TEXT OPTIONS",
   	"type": "number",
     "label": "Text font size (px)",
     "value": 40
   },
   "textAlign": {
+    "group": "TEXT OPTIONS",
     "type": "dropdown",
     "label": "Text align",
     "value": "center",
@@ -33,25 +34,20 @@
       "right": "Right"
     }
   },
-  "iconOptions": {
-    "type": "hidden",
-    "label": "ICON OPTIONS"
-  },
   "iconSize": {
+    "group": "ICON OPTIONS",
   	"type": "number",
     "label": "Icon font size (px)",
     "value": 30
   },
   "iconVertical": {
+    "group": "ICON OPTIONS",
   	"type": "number",
     "label": "Icon vertical (px)",
     "value": 2
   },
-  "goalOptions": {
-    "type": "hidden",
-    "label": "GOAL"
-  },
   "goalType": {
+    "group": "GOAL EVENT",
     "type": "dropdown",
     "label": "Goal type",
     "value": "subscriber",
@@ -65,6 +61,7 @@
     }
   },
   "goalTimeframe": {
+    "group": "GOAL EVENT",
     "type": "dropdown",
     "label": "Goal timeframe (sub points = month only)",
     "value": "month",
@@ -75,16 +72,19 @@
     }
   },
   "goalText": {
+    "group": "GOAL EVENT",
     "type": "text",
     "label": "Goal text",
     "value": "Sub goal"
   },
   "goalNumber": {
+    "group": "GOAL EVENT",
     "type": "number",
     "label": "Goal number",
     "value": 15
   },
   "goalIcon": {
+    "group": "GOAL EVENT",
     "type": "dropdown",
     "label": "Goal icon:",
     "value": "on",
@@ -93,11 +93,8 @@
       "off": "Off"
     }
   },
-  "event1Options": {
-    "type": "hidden",
-    "label": "EVENT 1"
-  },
   "el1": {
+    "group": "EVENT 1",
     "type": "dropdown",
     "label": "Event 1 type",
     "value": "subscriber-latest",
@@ -136,16 +133,19 @@
     }
   },
   "el1FormatName": {
+    "group": "EVENT 1",
   	"type": "text",
     "label": "Event 1 name format",
     "value": "{name}"
   },
   "el1FormatAmount": {
+    "group": "EVENT 1",
   	"type": "text",
     "label": "Event 1 amount format",
     "value": "{amount}X"
   },
   "el1Icon": {
+    "group": "EVENT 1",
     "type": "dropdown",
     "label": "Event 1 icon:",
     "value": "on",
@@ -154,11 +154,8 @@
       "off": "Off"
     }
   },
-  "event2Options": {
-    "type": "hidden",
-    "label": "EVENT 2"
-  },
   "el2": {
+    "group": "EVENT 2",
     "type": "dropdown",
     "label": "Event 2 type",
     "value": "cheer-latest",
@@ -197,16 +194,19 @@
     }
   },
   "el2FormatName": {
+    "group": "EVENT 2",
   	"type": "text",
     "label": "Event 2 name format",
     "value": "{name}"
   },
   "el2FormatAmount": {
+    "group": "EVENT 2",
   	"type": "text",
     "label": "Event 2 amount format",
     "value": "{amount}"
   },
   "el2Icon": {
+    "group": "EVENT 2",
     "type": "dropdown",
     "label": "Event 2 icon:",
     "value": "on",
@@ -215,11 +215,8 @@
       "off": "Off"
     }
   },
-  "event3Options": {
-    "type": "hidden",
-    "label": "EVENT 3"
-  },
   "el3": {
+    "group": "EVENT 3",
     "type": "dropdown",
     "label": "Event 3 type",
     "value": "follower-latest",
@@ -258,16 +255,19 @@
     }
   },
   "el3FormatName": {
+    "group": "EVENT 3",
   	"type": "text",
     "label": "Event 3 name format",
     "value": "{name}"
   },
   "el3FormatAmount": {
+    "group": "EVENT 3",
   	"type": "text",
     "label": "Event 3 amount format",
     "value": ""
   },
   "el3Icon": {
+    "group": "EVENT 3",
     "type": "dropdown",
     "label": "Event 3 icon:",
     "value": "on",
@@ -276,11 +276,8 @@
       "off": "Off"
     }
   },
-  "event4Options": {
-    "type": "hidden",
-    "label": "EVENT 4"
-  },
   "el4": {
+    "group": "EVENT 4",
     "type": "dropdown",
     "label": "Event 4 type",
     "value": "none",
@@ -319,16 +316,19 @@
     }
   },
   "el4FormatName": {
+    "group": "EVENT 4",
     "type": "text",
     "label": "Event 4 name format",
     "value": ""
   },
   "el4FormatAmount": {
+    "group": "EVENT 4",
     "type": "text",
     "label": "Event 4 amount format",
     "value": ""
   },
   "el4Icon": {
+    "group": "EVENT 4",
     "type": "dropdown",
     "label": "Event 4 icon:",
     "value": "on",
@@ -337,11 +337,8 @@
       "off": "Off"
     }
   },
-  "event5Options": {
-    "type": "hidden",
-    "label": "EVENT 5"
-  },
   "el5": {
+    "group": "EVENT 5",
     "type": "dropdown",
     "label": "Event 5 type",
     "value": "none",
@@ -380,16 +377,19 @@
     }
   },
   "el5FormatName": {
+    "group": "EVENT 5",
     "type": "text",
     "label": "Event 5 name format",
     "value": ""
   },
   "el5FormatAmount": {
+    "group": "EVENT 5",
     "type": "text",
     "label": "Event 5 amount format",
     "value": ""
   },
   "el5Icon": {
+    "group": "EVENT 5",
     "type": "dropdown",
     "label": "Event 5 icon:",
     "value": "on",
@@ -398,11 +398,8 @@
       "off": "Off"
     }
   },
-   "event6Options": {
-    "type": "hidden",
-    "label": "EVENT 6"
-  },
   "el6": {
+    "group": "EVENT 6",
     "type": "dropdown",
     "label": "Event 6 type",
     "value": "none",
@@ -441,44 +438,47 @@
     }
   },
   "el6FormatName": {
+    "group": "EVENT 6",
     "type": "text",
     "label": "Event 6 name format",
     "value": ""
   },
   "el6FormatAmount": {
+    "group": "EVENT 6",
     "type": "text",
-    "label": "Event 5 amount format",
+    "label": "Event 6 amount format",
     "value": ""
   },
   "el6Icon": {
+    "group": "EVENT 6",
     "type": "dropdown",
-    "label": "Event 5 icon:",
+    "label": "Event 6 icon:",
     "value": "on",
     "options": {
       "on": "On",
       "off": "Off"
     }
   },
-  "animationOptions": {
-    "type": "hidden",
-    "label": "ANIMATION OPTIONS"
-  },
   "timeIn": {
+    "group": "ANIMATION OPTIONS",
     "type": "number",
     "label": "Animation in time (ms)",
     "value": 400
   },
   "timeDisplay": {
+    "group": "ANIMATION OPTIONS",
     "type": "number",
     "label": "Display time (ms)",
     "value": 4970
   },
   "timeOut": {
+    "group": "ANIMATION OPTIONS",
     "type": "number",
     "label": "Animation out time (ms)",
     "value": 400
   },
   "animationIn": {
+    "group": "ANIMATION OPTIONS",
     "type": "dropdown",
     "label": "Animation In:",
     "value": "fadeIn",
@@ -520,6 +520,7 @@
     }
   },
   "animationOut": {
+    "group": "ANIMATION OPTIONS",
     "type": "dropdown",
     "label": "Animation Out:",
     "value": "flipOutX",
@@ -559,11 +560,8 @@
       "rollOut": "rollOut"
     }
   },
-  "tipOptions": {
-    "type": "hidden",
-    "label": "TIP OPTIONS"
-  },
   "tipLocale": {
+    "group": "TIP/SUPERCHAT OPTIONS",
     "type": "dropdown",
     "label": "Locale",
     "value": "en-US",
@@ -1005,6 +1003,7 @@
     }
   },
   "tipCurrency": {
+    "group": "TIP/SUPERCHAT OPTIONS",
     "type": "text",
     "label": "Currency",
     "value": "USD"

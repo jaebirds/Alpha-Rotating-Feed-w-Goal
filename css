@@ -54,12 +54,24 @@ html, body {
   font-weight: normal;
 }
 
+.mySlides span:first-of-type {
+  margin-right: 0.5rem;
+}
+
+.icons, .mySlides svg {
+  position: relative;
+  top: {{iconVertical}}px;
+}
 .icons {
   font-family: 'swdoctor-twitch-icons-webfont', 'Courier New', sans-serif;
   font-size: {{iconSize}}px;
-  position: relative;
-  top: {{iconVertical}}px;
   color: {{accentColor}};
+}
+.mySlides svg {
+  width: {{iconSize}}px;
+  height: {{iconSize}}px;
+  fill: {{accentColor}};
+  filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.7));
 }
 
 .icons-A {
