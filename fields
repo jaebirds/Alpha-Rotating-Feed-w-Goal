@@ -40,12 +40,6 @@
     "label": "Icon font size (px)",
     "value": 30
   },
-  "iconVertical": {
-    "group": "ICON OPTIONS",
-  	"type": "number",
-    "label": "Icon vertical (px)",
-    "value": 2
-  },
   "goalType": {
     "group": "GOAL EVENT",
     "type": "dropdown",

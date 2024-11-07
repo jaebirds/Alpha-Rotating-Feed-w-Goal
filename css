@@ -22,6 +22,12 @@ html, body {
   width: 100%;
 }
 
+.mySlides > div {
+  display: inline-flex;
+  gap: 9px;
+  align-items: center;
+}
+
 .icon {
   text-align: center;
   text-decoration: none;
@@ -37,33 +43,15 @@ html, body {
   padding-top: 2px;
 }
 
-.fa {
-  width: 45px;
-  padding: 5px;
-  color: #5e5e5e;
-}
-
 .amount {
   color: {{accentColor}};
-}
-
-@font-face {
-  font-family: 'swdoctor-twitch-icons-webfont';
-  src: url('//static1.squarespace.com/static/59626b932cba5ea9874ee38d/t/5cca210ee2c4831672765349/1556750606848/swdoctor-twitch-icons-webfont.woff') format('woff');
-  font-style: normal;
-  font-weight: normal;
 }
 
 .mySlides span:first-of-type {
   margin-right: 0.5rem;
 }
 
-.icons, .mySlides svg {
-  position: relative;
-  top: {{iconVertical}}px;
-}
 .icons {
-  font-family: 'swdoctor-twitch-icons-webfont', 'Courier New', sans-serif;
   font-size: {{iconSize}}px;
   color: {{accentColor}};
 }

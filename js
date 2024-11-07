@@ -158,35 +158,35 @@ window.addEventListener('onWidgetLoad', async function (obj) {
       let icon;
       switch (type) {
         case 'follower':
-          icon = 'S';
+          icon = 'heart';
           break;
         case 'subscriber':
-          icon = element.type.includes('gift') ? 'D' : 'F';
+          icon = element.type.includes('gift') ? 'gift' : 'crown';
           break;
         case 'host':
         case 'raid':
-          icon = 'H';
+          icon = 'bolt';
           break;
         case 'cheer':
           icon = 'A';
           break;
         case 'tip':
-          icon = 'G';
+          icon = 'coins';
           break;
         case 'goal':
           switch (element.goalType) {
             case 'follower':
-              icon = 'S';
+              icon = 'heart';
               break;
             case 'subscriber':
             case 'subscriber-points':
-              icon = 'F';
+              icon = 'crown';
               break;
             case 'cheer':
               icon = 'A';
               break;
             case 'tip':
-              icon = 'G';
+              icon = 'coins';
               break;
           }
           break;
@@ -196,8 +196,10 @@ window.addEventListener('onWidgetLoad', async function (obj) {
       if (element.icon === 'on') {
         if (icon === 'G')
           slideToAppend += '<span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138 138"><circle class="a" cx="69" cy="69" r="50"/><path class="b" d="M297.64,363.94a57,57,0,1,1-57,57,57,57,0,0,1,57-57m0-12a69,69,0,1,0,69,69,69.08,69.08,0,0,0-69-69Z" transform="translate(-228.64 -351.94)"/></svg></span>';
+        else if (icon === 'A')
+          slideToAppend += '<span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 242"><g><path d="M 98.179687,1.2109375 C 97.855652,1.2550523 97.560421,1.4080836 97.25,1.6015625 94.767155,3.1490685 -0.28319317,161.12216 0.69335937,162.07812 1.1365639,162.51199 23.073077,180.44674 49.439453,201.93359 75.805829,223.42043 97.929187,241 98.603516,241 c 0.0477,0 0.278802,-0.14956 0.677734,-0.43555 0.398931,0.28599 0.630036,0.43555 0.677734,0.43555 0.674326,0 22.797686,-17.57957 49.164066,-39.06641 26.36637,-21.48685 48.30289,-39.42161 48.74609,-39.85547 C 198.84569,161.12216 103.79534,3.1490685 101.3125,1.6015625 100.69166,1.2146048 100.13088,0.99349758 99.28125,1.46875 98.856433,1.2311238 98.503723,1.1668227 98.179687,1.2109375 Z" /></g></svg></span>';
         else
-          slideToAppend += '<span class="icons icons-' + icon + '">' + icon + '</span>';
+          slideToAppend += '<i class="icons fa-solid fa-' + icon + '"></i>';
       }
       slideToAppend += "</div></div>";
       
